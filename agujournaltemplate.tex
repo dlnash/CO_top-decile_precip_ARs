@@ -240,7 +240,7 @@ Three commonly used AR detection tools (ARDTs) were employed to detect ARs: (1) 
 Figure \ref{fig:ar_overhead} shows the frequency of overhead AR conditions in Colorado using the above-mentioned ARDTs. \citeA{Guan2024AERA5} tARgetv4 has the highest frequency at about 4--7\% of the time, which aligns well with relative threshold ARDTs being considered more permissive, particularly in areas like Colorado that have low climatological water vapor content \cite{Rutz2019ARTMIP}. The AR Scale and Rutz ARDT show similar AR frequencies at about 0--4\% of the time, with the highest frequency occurring in the southeastern region of the state. AR Scale 1 and AR Scale 2 are the highest frequency (not shown), with AR Scale 4 and 5 rarely, if ever, occurring. 
 
 \begin{figure}
-\includegraphics{fig1.png}
+\noindent\includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{fig1.png}
 \label{fig:ar_overhead}
 \caption{Frequency of AR conditions (\%; the fraction of analyses times meeting the criteria)  based on (a) the \citeA{Guan2024AERA5} tARget v4 using ERA5 (1-hr), (b) the AR Scale \cite{MartinRalph2019} using ERA5 (1-hr) and (c) the \citeA{Rutz2014} ARDT using MERRA2 (3-hr). See Section \ref{sec:data} for more information on each ARDT. The black contours are the HU2 Regions, the grey contours are the HU8 subbasins that fall within Colorado, and the red dot indicates the location of Denver.}
 \end{figure}
@@ -258,7 +258,7 @@ We completed sensitivity tests on the grid points, height, and time of initializ
 \textbf{Time:} Since the PRISM daily precipitation data is centered on 00 UTC of each day, the sensitivity test trajectories were initialized at 12 and 18 UTC of the previous day, plus 00, and 06 UTC of the day when precipitation exceeded the 90th percentile. There were few differences in trajectories initialized at different times in the 24-hour period of precipitation accumulation; therefore, we chose to initialize all of our trajectories from 00 UTC to center them in the middle of the 24-hour precipitation accumulation period. 
 
 \begin{figure}
-\includegraphics{example.jpg}
+\noindent\includegraphics[width=\textwidth]{fig2.png}
 \label{fig:sensitivity_tests}
 \caption{Examples of backwards trajectories that were initialized from the grid cell closest to the centroid of the Upper Yampa (yellow lines), Upper Dolores (green lines), Upper South Platte (light blue lines) and Arkansas Headwaters (dark blue lines) subbasins, as well as the four grid cells 0.25° north, south, east, and west of the centroids starting at (a-d) 500 hPa, (e-h) 600 hPa, (i-l) 700 hPa, (m-p) 800 hPa. The start time for initialization is indicated by the column where (a, e, i, m) started on 18 March 2003 12Z, (b, f, j, n) 18 March 2003 18Z, (c, g, k, o) 19 March 2003 00Z, and (d, h, l, p) 19 March 2003 06Z. }
 \end{figure}
@@ -270,7 +270,7 @@ To determine whether any given top-decile precipitation day was associated with 
 We also tested multiple spatio-temporal criteria for determining whether a trajectory was associated with an AR at the coast. For example, we utilized “strict” requirements for associating a trajectory at the coast with an AR. The strict method said if a trajectory crossed the coast, the AR had to be present at the hour the trajectory crossed the coast as well as at the same grid cell. With the strict methodology, we saw only about xx ARs associated with the Upper Yampa subbasin per year. On the other hand, we used “flexible” criteria to determine whether any given trajectory was associated with an AR. The flexible criteria said that if there was an AR within any grid cell within 1 degree (+- 0.5 degree from the grid where the trajectory crossed the coast) and within 24 hours (+- 12 hours from when the trajectory crossed the coast). The flexible requirements saw about 20 ARs associated with the Upper Yampa subbasin per year. In the end, we chose to utilize the flexible requirements for this analysis. This is because the trajectories themselves are fairly ephemeral and are tracking one specific air parcel in space in time that we assume is associated with the precipitation in that subbasin. Based on our sensitivity tests on initialization conditions, you can see that even with minor changes in initialization conditions can result in a different end point for the trajectory. Therefore, using the flexible requirements for determining whether that top-decile precipitation day is associated with a coastal landfalling AR is better for capturing the possibility that even though that exact air parcel does not have an AR directly overhead at the coast, it is likely that the moisture from the AR was able to penetrate inland and reach Colorado and result in precipitation.
 
 \begin{figure}
-\includegraphics{fig3.png}
+\noindent\includegraphics[width=\textwidth]{fig3.png}
 \label{fig:choropleth}
 \caption{(a–c) The fraction of top-decile precipitation associated with coastal landfalling ARs (shaded; \% of total top-decile precipitation between 2000 and 2023) for each subbasin (contour, grey) in Colorado based on (a) tARgetv4 (Guan and Waliser, 2015), (b) ERA5 AR Scale (Ralph et al., 2019), and (c) Rutz et al., (2014) ARDT. The white highlighted subbasins are the Upper Yampa (northwest), Upper Dolores (southwest), Upper South Platte (northeast), and Arkansas Headwaters (southeast). The black contours indicate the HU2 Regions that each subbasin falls within. (d–f) The standard deviation of the fraction of top-decile precipitation within each water year associated with coastal landfalling ARs (shaded; \%) for each subbasin (contour, grey) in Colorado based on (d)  tARgetv4 (Guan and Waliser, 2015), (e) ERA5 AR Scale (Ralph et al., 2019), and (f) Rutz et al., (2014) ARDT. }
 \end{figure}
@@ -320,7 +320,7 @@ Water year variability coefficients are some of the highest in the Arkansas Head
 Figure \ref{fig:time_series} shows the top-decile precipitation within each water year (WY) for the Upper Yampa, Rio Grande Headwaters, Upper South Platte, and the Arkansas Headwaters subbasins and compares them to the contribution associated with coastal ARs. Notably, the fraction of top-decile precipitation is higher in the Upper Yampa (10--54\%) and Rio Grande Headwaters (31--100\%) subbasins compared to the Upper South Platte (14--20\%) and Arkansas Headwaters (11-25\%) subbasins. Additionally, there are more years in the eastern subbasins where there is a 0\% contribution from coastal ARs to top-decile precipitation, whereas in the Upper Yampa there are 3 years with a 0\% contribution and no years in the Rio Grande Headwaters subbasin. The average amount of top-decile precipitation associated with coastal ARs ranges from just below ~25 mm per year in the Upper Yampa, Upper South Platte, and Arkansas Headwaters subbasin to ~90 mm per year in the Rio Grande Headwaters subbasin. From year to year, there is high variability in top-decile precipitation across all the subbasins. For example, in the Rio Grande Headwaters, the years 2002 and 2018 saw only ~30 mm of top-decile precipitation, while 2001 and 2008 saw 195 mm and 267 mm, respectively. 
 
 \begin{figure}
-\includegraphics{fig4.png}
+\noindent\includegraphics[width=\textwidth]{fig4.png}
 \label{fig:time_series}
 \caption{(a) Total top-decile precipitation (light red shading; inches per year) within each water year (e.g. WY 2000 indicates from 1 October 1999 to 30 September 2000) for the Upper Yampa subbasin. The dark red shading is the top-decile precipitation in that water year associated with coastal landfalling ARs. The dotted black lines are showing the minimum and maximum contribution to top-decile precipitation. The black solid line is the mean contribution to top-decile precipitation. (b) Same as (a), but for the Upper Dolores subbasin. (c Same as (a) but for the Upper South Platte subbasin. (d) Same as (a) but for the Arkansas Headwaters subbasin. ** note: add percent contribution, min/max, median/mean}
 \end{figure}
@@ -344,7 +344,7 @@ By far the Colorado region has the most trajectories associated with ARs at the 
 The Rio Grande region had the second most trajectories associated with ARs at the coast, with XX trajectories of the XX ran for the xx subbasins during the cool season, and xx during the warm season. REPEAT FOR ALL THE REGIONS
 
 \begin{figure}
-\includegraphics{fig5.png}
+\noindent\includegraphics[width=\textwidth]{fig5.png}
 \label{fig:spaghetti_plot}
 \caption{(a) The backwards trajectories for all Colorado subbasins that fall within the Colorado region (black contour) for the months of November to April from 2000 to 2023 that were associated with an AR defined by the ERA5 AR Scale (Ralph et al., 2019) when the trajectory crossed the coast. (b) Same as (a) but for the Rio Grande region. (c) Same as (a) but for the South Platte region. (d) Same as (a) but for the Arkansas region. (e) Same as (a) but for the months of May to October. (f) Same as (e) but for the Rio Grande region. (g) Same as (e) but for the South Platte region. (h) Same as (e) but for the Arkansas region.}
 \end{figure}
@@ -360,7 +360,7 @@ There are so few trajectories that reach the Arkansas region during the cool mon
 
 
 \begin{figure}
-\includegraphics{fig6.png}
+\noindent\includegraphics[width=\textwidth]{fig6.png}
 \label{fig:heatmaps}
 \caption{(a) The trajectory frequency (shading; \# normalized using the min-max method) for all Colorado subbasins that fall within the Colorado region (black contour) for the months of November to April from 2000 to 2023. (b) Same as (a) but for the Rio Grande region. (c) Same as (a) but for the South Platte region. (d) Same as (a) but for the Arkansas region. (e) Same as (a) but for the months of May to October. (f) Same as (e) but for the Rio Grande region. (g) Same as (e) but for the South Platte region. (h) Same as (e) but for the Arkansas region.}
 \end{figure}
