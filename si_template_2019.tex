@@ -45,8 +45,7 @@
 % (If you are submitting to a journal other than jgrga,
 % substitute the initials of the journal for "jgrga" below.)
 
-\documentclass[jgrga]{agutexSI2019}
-% \raggedbottom
+\documentclass[draft,jgrga]{agutexSI2019}
 % sigh
 \makeatletter
 \def\@makecol{\setbox\@outputbox
@@ -68,7 +67,6 @@
    \vskip-\dimen128\@textbottom}%
    \global\maxdepth\@maxdepth}
 \makeatother
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 %  SUPPORTING INFORMATION TEMPLATE
@@ -211,7 +209,6 @@
 \noindent\textbf{Contents of this file}
 %%%Remove or add items as needed%%%
 \begin{enumerate}
-% \item Text S1 to Sx
 \item Figures S1 to S12
 \item Tables S1 to S5
 %if Tables are larger than 1 page, upload as separate excel file
@@ -223,111 +220,91 @@
 % \item Captions for Movies S1 to Sx
 % \item Captions for Audio S1 to Sx
 % \end{enumerate}
+% \newpage
 
-% \noindent\textbf{Introduction}
-%Type or paste your text here. The introduction gives a brief overview of the supporting information. You should include information %about as many of the following as possible (when appropriate):
-% 1. a general overview of the kind of data files;
-% 2. information about when and how the data were collected or created;
-% 3. a general description of processing steps used;
-% 4. any known imperfections or anomalies in the data.
-
-\clearpage
-
-\section{Figures}
+% \noindent\textbf{Figures S1 to S12}
 
 \begin{figure}
+\setfigurenum{S1} %%You can change number for each figure if you want, not required. "S" prepended automatically.
 \noindent\includegraphics[width=\textwidth]{figS1.png}
-\caption{(a) Frequency of AR conditions (shaded, \%; the fraction of analyses times meeting the criteria) between January 2000 and December 2023 based on the \citeA{Guan2024AERA5} tARget v4 using ERA5 (1-hr). The red contours are the four regions used to summarize the results and the red dot indicates the location of Denver. These results are not a part of the trajectory analysis. (b) Same as (a) except for the AR scale \cite{MartinRalph2019} using ERA5 (1-hr). (c) Same as (a) except for the \citeA{Rutz2014} ARDT using MERRA2 (3-hr).}
-\label{fig:ar_overhead}
+\caption{(a) Frequency of AR conditions (shaded, \%; the fraction of analyses times meeting the criteria) between January 2000 and December 2023 based on the tARgetv4 ARDT using ERA5 (1-hr). The red contours are the four regions used to summarize the results and the red dot indicates the location of Denver. These results are not a part of the trajectory analysis. (b) Same as (a) except for the AR scale using ERA5 (1-hr). (c) Same as (a) except for the Rutz ARDT using MERRA2 (3-hr).}
+\label{fig:supp:ar_overhead}
 \end{figure}
-\newpage
 
 \begin{figure}
-\noindent\includegraphics[width=\textwidth]{figS1.png}
-\caption{The backwards trajectories for all CO subbasins that fall within the (a) Upper Colorado, (b) Rio Grande, (c) Missouri, and (d) Arkansas regions (black contours) for the months of December to February from 2000 to 2023  that were associated with a landfalling AR defined by the AR scale (Ralph et al., 2019). (e-h) are the same as (a-d) but for the months of March to May. (i-l) are the same as (a-d) but for the months of June to August. (m-p) are the same as (a-d) but for the months of September to November.}
-\label{fig:supp:spaghetti_ssn}
+\noindent\includegraphics[scale=0.8]{figS2.png}
+\caption{Landfalling AR trajectory frequency (shading; count) for all CO subbasins that fell within the (a) Northwestern, (b) Southwestern, (c) Rio Grande, and (d) Eastern regions (black contours) for the months of May to October from 2000 to 2023 that were associated with a landfalling AR defined by the tARgetv4 ARDT. (e-h) Same as (a-d) but showing the tARgetv4 landfalling AR trajectories colored by the AR scale value (if applicable) at the coast.}
+\label{fig:supp:heatmap_spaghetti_MJJASO_tARget}
 \end{figure}
-\clearpage
-
-\begin{figure}
-\noindent\includegraphics[width=\textwidth]{figS2.png}
-\caption{
-The landfalling AR trajectory frequency (shading; count) for all CO subbasins that fall within the (a) Upper Colorado, (b) Rio Grande, (c) Missouri, and (d) Arkansas regions (black contours) for the months of December to February from 2000 to 2023. (e-h) are the same as (a-d) but for the months of March to May. (i-l) are the same as (a-d) but for the months of June to August. (m-p) are the same as (a-d) but for the months of September to November.}
-\label{fig:supp:heatmap_ssn}
-\end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS3.png}
-\caption{The non-AR trajectory frequency (shading; count) for all CO subbasins that fall within the (a) Upper Colorado, (b) Rio Grande, (c) Missouri, and (d) Arkansas regions (black contours) for the months of November to April from 2000 to 2023. (e-h) are the same as (a-d) but for the months of May to October.}
-\label{fig:supp:non_AR_heatmaps}
+\caption{The non-AR trajectory frequency (shading; count) for all CO subbasins that fell within the (a) Northwestern, (b) Southwestern, (c) Rio Grande, and (d) Eastern regions (black contours) for the months of November to April from 2000 to 2023. (e-h) Same as (a-d) but showing the non-AR (tARgetv4) trajectories colored by the AR scale value (if applicable) at the coast.}
+\label{fig:supp:heatmap_spaghetti_NDJFMA_no-AR_tARget}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS4.png}
-\caption{The non-AR trajectory frequency (shading; count) for the (a) Upper Yampa, (b) Roaring Fork, (c) Upper Gunnison, and (d) Upper San Juan subbasins (white contours) for all months from 2000 to 2023. The backwards trajectories for the (e) Upper Yampa, (f) Roaring Fork, (g) Upper Gunnison, and (h) Upper San Juan subbasins (black contours) for all months from 2000 to 2023 that were not associated with a landfalling AR, shaded by IVT (kg m\textsuperscript{-1} s\textsuperscript{-1}).}
-\label{fig:individual_subbasins}
+\caption{Same as Fig. \ref{fig:supp:heatmap_spaghetti_NDJFMA_no-AR_tARget}, but for the months of May to October.}
+\label{fig:supp:heatmap_spaghetti_MJJASO_no-AR_tARget}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS5.png}
-\caption{(a,c,e,g) Daily average composites of NDJFMA IVT (shaded and vectors; kg m\textsuperscript{-1} s\textsuperscript{-1}) and 700 hPa geopotential heights (contours; m) for 24 hours after landfalling AR trajectories fell within the red bounding box. The number of trajectories is identified in the upper left corner. (b,d,f,h) Daily average anomaly composites of NDJFMA IVT (shaded and vectors; kg m\textsuperscript{-1} s\textsuperscript{-1}) and 700 hPa geopotential heights (contours; m) for 24 hours after landfalling AR trajectories fell within the red bounding box. Values that are considered statistically significant at the 95\% confidence interval are indicated by the IVT vectors.}
-\label{fig:supp:composites_NDJFMA_lag1}
+\caption{Same as Fig. \ref{fig:supp:heatmap_spaghetti_MJJASO_tARget}, but for the Rutz ARDT and the months of November to April.}
+\label{fig:supp:heatmap_spaghetti_NDJFMA_Rutz}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS6.png}
-\caption{Same as Fig. \ref{fig:supp:composites_NDJFMA_lag1}, but for MJJASO.}
-\label{fig:supp:composites_MJJASO_lag1}
+\caption{Same as Fig. \ref{fig:supp:heatmap_spaghetti_MJJASO_tARget}, but for the Rutz ARDT and the months of May to October.}
+\label{fig:supp:heatmap_spaghetti_MJJASO_Rutz}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS7.png}
-\caption{(a,c,e,g) Daily average composites of DJF IVT (shaded and vectors; kg m\textsuperscript{-1} s\textsuperscript{-1}) and 700 hPa geopotential heights (contours; m) for days when landfalling AR trajectories fell within the red bounding box. The number of trajectories is identified in the upper left corner. (b,d,f,h) Same as (a,c,e,g), but for anomalies. Values that are considered statistically significant at the 95\% confidence interval are indicated by the IVT vectors.}
-\label{fig:supp:composites_DJF}
+\caption{Same as Fig. \ref{fig:supp:heatmap_spaghetti_MJJASO_tARget}, but for the AR scale ARDT and the months of November to April.}
+\label{fig:supp:heatmap_spaghetti_NDJFMA_ARscale}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS8.png}
-\caption{Same as Fig. \ref{fig:supp:composites_DJF}, but for MAM.}
-\label{fig:supp:composites_MAM}
+\caption{Same as Fig. \ref{fig:supp:heatmap_spaghetti_MJJASO_tARget}, but for the AR scale ARDT and the months of May to October.}
+\label{fig:supp:heatmap_spaghetti_MJJASO_ARscale}
 \end{figure}
-\clearpage
 
 \begin{figure}
-\noindent\includegraphics[scale=0.8]{figS9.png}
-\caption{Same as Fig. \ref{fig:supp:composites_DJF}, but for JJA.}
-\label{fig:supp:composites_JJA}
+\noindent\includegraphics[width=\textwidth]{figS9.png}
+\caption{(a,c,e,g) Daily average composites of MJJASO IVT (shaded and vectors; kg m\textsuperscript{-1} s\textsuperscript{-1}) and 700 hPa geopotential heights (contours; m) for days when tARgetv4 landfalling AR trajectories at the coast fell within the red bounding box. The number of trajectories is identified in the upper left corner. (b,d,f,h) Daily average anomaly (annual cycle removed) composites of MJJASO IVT (shaded and vectors; kg m\textsuperscript{-1} s\textsuperscript{-1}) and 700 hPa geopotential heights (contours; m) for days when tARgetv4 landfalling AR trajectories fell within the red bounding box. Values that are considered statistically significant at the 95\% confidence interval are indicated by the IVT vectors.}
+\label{fig:supp:composites_MJJASO_tARget}
 \end{figure}
-\clearpage
 
 \begin{figure}
-\noindent\includegraphics[scale=0.8]{figS10.png}
-\caption{Same as Fig. \ref{fig:supp:composites_DJF}, but for SON.}
-\label{fig:supp:composites_SON}
+\noindent\includegraphics[width=\textwidth]{figS10.png}
+\caption{Same as Fig. \ref{fig:supp:composites_MJJASO_tARget}, but for the months of November to April and for 24 hours after tARgetv4 landfalling AR trajectories fell within the red bounding box.}
+\label{fig:composites_NDJFMA_tARget_lag1}
 \end{figure}
-\clearpage
 
 \begin{figure}
-\noindent\includegraphics[scale=0.8]{figS11.png}
-\caption{Landfalling AR (Guan and Waliser, 2015) trajectory frequency (shading; count) for all CO subbasins that fall within the (a) Upper Colorado, (b) Rio Grande, (c) Missouri, and (d) Arkansas regions (black contours) for the months of November to April from 2000 to 2023. (e-h) are the same as (a-d) but for the months of May to October.}
-\label{fig:supp:heatmaps_GW}
+\noindent\includegraphics[width=\textwidth]{figS11.png}
+\caption{Same as Fig. \ref{fig:supp:composites_MJJASO_tARget}, but for the months of May to October and for 24 hours after tARgetv4 landfalling AR trajectories fell within the red bounding box.}
+\label{fig:composites_MJJASO_tARget_lag1}
 \end{figure}
-\clearpage
 
 \begin{figure}
 \noindent\includegraphics[scale=0.8]{figS12.png}
-\caption{Same as Fig. \ref{fig:supp:heatmaps_GW}, but for the Rutz et al., (2014) ARDT.}
-\label{fig:supp:heatmaps_rutz}
+\caption{(a–c) The fraction of top-decile precipitation associated with landfalling ARs (shaded; \% of total top-decile precipitation for MJJASO between 2000 and 2023) for each subbasin (contour, grey) in CO based on (a) tARgetv4, (b) Rutz, and (c) AR scale ARDTs. (d–f) Same as (a-c), but the fraction of total precipitation associated with landfalling ARs (shaded; \% of total precipitation for MJJASO between 2000 and 2023).}
+\label{fig:supp:choropleth_MJJASO}
 \end{figure}
-\clearpage
 
-\section{Tables}
+\begin{figure}
+\noindent\includegraphics[scale=0.65]{figS13.png}
+\caption{(a) Non-AR top-decile precipitation (light red shading; mm per year) for MJJASO within each water year (e.g., 2000 indicates from 1 October 1999 to 30 September 2000) for the Upper Yampa subbasin. The dark red shading is the top-decile precipitation associated with landfalling AR trajectories, based on tARgetv4 ARDT. The percent value above the dark red bar is the fraction of top-decile precipitation associated with landfalling ARs. The black solid line is the mean top-decile precipitation for the given subbasin. (b) Same as (a), but for the Roaring Fork subbasin. (c) Same as (a) but for the Upper Gunnison subbasin. (d) Same as (a) but for the Upper San Juan subbasin.}
+\label{fig:supp:time_series_MJJASO}
+\end{figure}
+
+% \noindent\textbf{Tables S1 to S5}
+
 % Table for NDJFMA ar
 \begin{table}
 \settablenum{S1} %%Change number for each table
@@ -338,7 +315,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \label{table:NDJFMAar}
 \begin{tabular}{lp{2cm}cccc}
 \toprule
- & Northwestern & Southwestern & Rio Grande & Eastern \\
+ & NW & SW & Rio Grande & Eastern \\
 \midrule
 \textbf{Total Trajectories} & 2118 & 2263 & 848 & 6264 \\
 \textbf{Landfalling AR Trajectories} & 17.5\% & 27.1\% & 22.5\% & 2.0\% \\
@@ -358,7 +335,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \label{table:NDJFMAar_scale}
 \begin{tabular}{lp{2cm}cccc}
 \toprule
- & Northwestern & Southwestern & Rio Grande & Eastern \\
+ & NW & SW & Rio Grande & Eastern \\
 \midrule
 \textbf{Total Trajectories} & 2118 & 2263 & 848 & 6264 \\
 \textbf{Landfalling AR Trajectories} & 22.1\% & 32.6\% & 28.4\% & 3.1\% \\
@@ -378,7 +355,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \label{table:MJJASOtARget}
 \begin{tabular}{lp{2cm}cccc}
 \toprule
- & Northwestern & Southwestern & Rio Grande & Eastern \\
+ & NW & SW & Rio Grande & Eastern \\
 \midrule
 \textbf{Total Trajectories} & 2118 & 2263 & 848 & 6264 \\
 \textbf{Landfalling AR Trajectories} & 11.2\% & 12.7\% & 8.5\% & 3.2\% \\
@@ -398,7 +375,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \label{table:MJJASOar}
 \begin{tabular}{lp{2cm}cccc}
 \toprule
- & Northwestern & Southwestern & Rio Grande & Eastern \\
+ & NW & SW & Rio Grande & Eastern \\
 \midrule
 \textbf{Total Trajectories} & 2118 & 2263 & 848 & 6264 \\
 \textbf{Landfalling AR Trajectories} & 7.5\% & 8.7\% & 6.6\% & 5.9\% \\
@@ -418,7 +395,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \label{table:MJJASOar_scale}
 \begin{tabular}{lp{2cm}cccc}
 \toprule
- & Northwestern & Southwestern & Rio Grande & Eastern \\
+ & NW & SW & Rio Grande & Eastern \\
 \midrule
 \textbf{Total Trajectories} & 2118 & 2263 & 848 & 6264 \\
 \textbf{Landfalling AR Trajectories} & 13.8\% & 16.0\% & 10.8\% & 7.1\% \\
@@ -432,8 +409,14 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 \end{table}
 
 
+% \noindent\textbf{Introduction}
+%Type or paste your text here. The introduction gives a brief overview of the supporting information. You should include information %about as many of the following as possible (when appropriate):
+% 1. a general overview of the kind of data files;
+% 2. information about when and how the data were collected or created;
+% 3. a general description of processing steps used;
+% 4. any known imperfections or anomalies in the data.
 
-
+%\clearpage
 
 %Delete all unused file types below. Copy/paste for multiples of each file type as needed.
 % \noindent\textbf{Text S1.}
@@ -472,6 +455,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 % \end{notation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
 %% ------------------------------------------------------------------------ %%
 %%  REFERENCE LIST AND TEXT CITATIONS
 
@@ -487,8 +471,8 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % if you get an error about newblock being undefined, uncomment this line:
 %\newcommand{\newblock}{}
-
-% \bibliography{ uncomment this line and enter the name of your bibtex file here } 
+\newpage
+% \bibliography{references} 
 
 
 
@@ -519,7 +503,7 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 %
 %% ------------------------------------------------------------------------ %%
 \end{article}
-
+\clearpage
 
 % Copy/paste for multiples of each file type as needed.
 
@@ -581,11 +565,11 @@ The landfalling AR trajectory frequency (shading; count) for all CO subbasins th
 %\end{table}
 % ---------------
 %
-% % EXAMPLE LARGE TABLE (UPLOADED SEPARATELY)
-% \begin{table}
-% \settablenum{S1} %%Change number for each table
-% \caption{Time of the Transition Between Phase 1 and Phase 2\tablenotemark{a}}
-% \end{table}
+% EXAMPLE LARGE TABLE (UPLOADED SEPARATELY)
+%\begin{table}
+%\settablenum{S1} %%Change number for each table
+%\caption{Time of the Transition Between Phase 1 and Phase 2\tablenotemark{a}}
+%\end{table}
 
 
 \end{document}
